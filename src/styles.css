@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.cstm_padd15 { 
+    padding:15px;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.red { background:#ff0000; }

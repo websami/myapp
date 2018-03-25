@@ -1,0 +1,38 @@
+<!-- Modal Header --> 
+<div *ngIf="user">
+    <div class="modal-header">
+    <h4 class="modal-title">Edit {{ user.firstName +" "+ user.lastName }} Details</h4>
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    </div>
+
+    <!-- Modal body -->
+    <div class="modal-body">
+        <div>User Details</div>
+            <br />
+          <div>
+             <form class="form-container">
+                <mat-form-field>
+                  <input matInput [(ngModel)]="user.firstName" name="firstName" placeholder="First name" >
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput [(ngModel)]="user.lastName" name="lastName" placeholder="Last name">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput [(ngModel)]="user.phoneNumber" name="phoneNumber" placeholder="Phone Number">
+                </mat-form-field>
+                <mat-form-field>
+                  <input matInput [(ngModel)]="user.birthDate" name="birthDate" placeholder="Birth Date">
+                </mat-form-field>
+            </form>
+          </div>
+    </div>
+
+    <!-- Modal footer -->
+     <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal"> Update Account</button>
+     </div>
+    
+</div>
+
+
